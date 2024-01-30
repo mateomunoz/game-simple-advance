@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+  <body data-game-mode="advanced">
+    <header class="header">
+      <div class="score">
+        <span class="score__title">YOU</span>
+        <span id="points-user" class="score__points">0</span>
+      </div>
+      <div class="logo">
+        <span class="block">ROCK</span>
+        <span class="block">PAPER</span>
+        <span class="block">SCISSORS</span>
+        <span class="block">LIZARD</span>
+        <span class="block">SPOCK</span>
+      </div>
+      <div class="score">
+        <span class="score__title">PC</span>
+        <span id="points-pc" class="score__points">0</span>
+      </div>
+    </header>
+    <main id="main" class="main main--first-step">
+      <div
+        id="first-step"
+        class="first-step first-step--advanced first-step--show"
+      >
+        <div class="game-item game-item-paper">
+          <img
+            class="game-item__image"
+            src="images/icon-paper.svg"
+            alt="paper image"
+            data-element="paper"
+          />
+        </div>
+        <div class="game-item game-item-scissors">
+          <img
+            class="game-item__image"
+            src="images/icon-scissors.svg"
+            alt="scissors image"
+            data-element="scissors"
+          />
+        </div>
+        <div class="game-item game-item-rock">
+          <img
+            class="game-item__image"
+            src="images/icon-rock.svg"
+            alt="rock image"
+            data-element="rock"
+          />
+        </div>
+        <div class="game-item game-item-lizard">
+          <img
+            class="game-item__image"
+            src="images/icon-lizard.svg"
+            alt="lizard image"
+            data-element="lizard"
+          />
+        </div>
+        <div class="game-item game-item-spock">
+          <img
+            class="game-item__image"
+            src="images/icon-spock.svg"
+            alt="spock image"
+            data-element="spock"
+          />
+        </div>
+      </div>
+      <div id="second-step" class="second-step">
+        <div class="option-container">
+          <h2 class="option-title">Your Picked</h2>
+          <div id="picked-user-container" class="game-item">
+            <img id="picked-user-image" class="game-item__image" />
+          </div>
+        </div>
+        <div class="game-result-container">
+          <h2 id="game-result" class="game-result">YOU WIN</h2>
+          <button id="play-again" class="game-button">PLAY AGAIN</button>
+        </div>
+        <div class="option-container">
+          <h2 class="option-title">The PC picked</h2>
+          <div id="picked-pc-container" class="game-item">
+            <img id="picked-pc-image" class="game-item__image" />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer"></footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>
